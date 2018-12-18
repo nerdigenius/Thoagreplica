@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ggunlocked.thoagreplica.RestaturanList.List">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_border"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Location" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/Sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar6"
+        android:background="@drawable/white_border"
+        android:drawableLeft="@drawable/icon_size_sort"
+        android:paddingLeft="10dp"
+        android:text=" Sort"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <ListView
+        android:id="@+id/LoactionList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Sort"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp" />
+</RelativeLayout>

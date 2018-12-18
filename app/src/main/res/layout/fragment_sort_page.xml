@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context="com.ggunlocked.thoagreplica.Sort_page">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Refine Your Search"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/icon_size_back"
+                android:text="Thoag"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:text="SORT BY"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearsort"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:capitalize="none"
+                    android:paddingLeft="20dp"
+                    android:text="Recommended"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:paddingLeft="20dp"
+                    android:text="Ratings"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:paddingLeft="20dp"
+                    android:text="Recommended"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:paddingLeft="20dp"
+                    android:text="A to Z"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:paddingLeft="20dp"
+                    android:text="Min,Order Amount"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:paddingLeft="20dp"
+                    android:text="Fastest Delivery"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="FILTER BY"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:drawableRight="@drawable/icon_size2"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="Payment Method"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:paddingLeft="20dp"
+                    android:text="Offers"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/textborder"
+                    android:paddingLeft="20dp"
+                    android:text="New Restaurants"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#828282" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
